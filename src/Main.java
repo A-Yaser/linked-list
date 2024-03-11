@@ -1,14 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        Stack stack1 = new Stack(10);
-        stack1.push(10);
-        stack1.push(9);
-        stack1.push(8);
-        stack1.push(7);
-        stack1.pop();
-        stack1.display();
+        LinkedList myList= new LinkedList();
+        LinkedList list = new LinkedList();
+        list.add(100);
+        list.add(200);
+        list.add(300);
+        list.add(400);
+
+        list.display();
+        System.out.println("/////////////");
+        list.add(250,1);
+        list.delete(300);
+        list.display();
 
 
-        System.out.println(stack1.getTop());
     }
 }
